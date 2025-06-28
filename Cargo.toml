@@ -1,0 +1,16 @@
+[package]
+name = "nitro-tee-attestation"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aws-nitro-enclaves-nsm-api = "0.4.0"
+ciborium = "0.2.2"
+coset = "0.3.8"
+getrandom = { version = "0.2.16", features = ["custom"] }
+hex = "0.4.3"
+ring = "0.17.14"
+rustls-pki-types = { version = "1.12.0", features = ["alloc"] }
+rustls-webpki = { version = "0.103.3", features = ["std", "ring"] }
+serde = { version = "1.0.219", features = ["derive"] }
+x509-parser = { version = "0.17.0", features = ["verify"] }
